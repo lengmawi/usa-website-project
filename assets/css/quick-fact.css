@@ -1,0 +1,126 @@
+.quick-fact {
+    width: 95%;
+    margin: auto;
+    padding-top: 100px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 1320px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 474px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-col {
+    background: var(--light-gray);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+body.dark .grid-col {
+    background: var(--lighter-black);
+}
+@media only screen and (max-width: 925px) {
+    .grid-col {
+        display: contents;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+}
+@media only screen and (max-width: 474px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.quick-fact h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quick-fact p {
+    text-align: center;
+}
+.grid-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.color-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+@media only screen and (max-width: 925px) {
+    .color-boxes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .color-boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.color-boxes tbody tr td {
+    font-size: 12px;
+    text-align: center;
+}
+.color-box {
+    display: flex;
+    background: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column-reverse;
+}
+body.dark .color-box {
+    background: var(--black);
+    color: var(--white);
+}
+.color-preview {
+    display: block;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+}
+.box {
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+.firstColor {
+    background: var(--firstColor);
+}
+.secondColor {
+    background: var(--secondColor);
+}
+.thirdColor {
+    background: var(--thirdColor);
+}
+.fourColor {
+    background: var(--fourColor);
+}
+.fiveColor {
+    background: var(--fiveColor);
+}
+.sixColor {
+    background: var(--sixColor);
+}
+.sevenColor {
+    background: var(--sevenColor);
+}
+.eightColor {
+    background: var(--eightColor);
+}

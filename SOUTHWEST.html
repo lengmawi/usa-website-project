@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
+        <title> Mawi Tour &#124; SOUTHWEST</title>
+        <link rel="stylesheet" href="assets/css/nav.css">
+        <link rel="stylesheet" href="assets/css/topbutton.css">
+        <link rel="stylesheet" href="assets/css/content.css">
+        <link rel="stylesheet" href="assets/css/SOUTHWEST.css">
+        <link rel="stylesheet" href="assets/css/animated-search.css">
+        <link rel="stylesheet" href="assets/css/InteractiveUSMap.css">
+        <link rel="stylesheet" href="assets/css/questions.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Nav -->
+        <header id="main-nav">
+            <div id="container">
+                <div id="menu" class=" overlay">
+                    <a href="javascript:void(0)" class="closeMenu" onclick="closeNav()" >&times;</a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="WEST.html">WEST</a></li>
+                            <li><a href="SOUTHWEST.html">SOUTHWEST</a></li>
+                            <li><a href="SOUTHEAST.html">SOUTHEAST</a></li>
+                            <li><a href="NORTHEAST.html">NORTHEAST</a></li>
+                            <li><a href="MIDWEST.html">MIDWEST</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="nav-hamburger-label" onclick="openNav()" aria-hidden="true">&#9776;</span>
+                <a href="index.html"><img src="assets/images/brand.png" alt="logo"></a>
+            </div>
+        </header> 
+        <!-- End Nav -->
+        <!-- Welcome -->
+        <section class="content">
+            <div class="light-dark">
+                <input type="checkbox" class="light-dark-checkbox" id="light-dark-checkbox">
+                    <label for="light-dark-checkbox" class="light-dark-checkbox-label">
+                    <span class="light-dark-ball"></span>
+                </label>
+            </div>
+            <div class="wrapper">
+                <h1>SOUTHWEST</h1>
+            </div>
+        </section>
+        <!-- End Welcome -->
+        <!-- Map SVG -->
+        <section class="map-svg">
+            <h2>Search for States...</h2>
+            <p>To see the states, hover your cursor over it and click it.</p>
+            <div id="details-box"></div>
+            <!--  min-x , min-y , width and height  -->
+            <svg viewBox="-40 60 1000 589" id="usa-map" data-name="Southwest Region">
+                <g class="SOUTHWEST">
+                    <a href="SOUTHEAST/AZ.html">
+                        <path
+                            data-name="Arizona"
+                            d="m 372.18593,309.90486 -32.71027,-4.07665 -17.56843,-2.52365 -25.04228,-3.97958 -2.52364,-0.38826 0,0.19413 -4.27078,18.83025 -2.23245,-0.0971 -3.39721,-3.00895 -4.27078,3.59133 -0.0971,15.43304 -1.55301,3.30014 0,0.29119 0,0.0971 -0.19413,2.42657 3.39721,9.12394 3.00896,4.07665 -5.43554,3.20308 -2.13539,3.97959 -3.49427,8.54155 -1.74713,0.38826 -0.0971,7.0856 3.00896,2.23246 -1.55301,4.27077 -3.49427,0.19413 0,0 -2.03833,3.78546 6.98855,4.36784 13.20058,7.3768 40.76651,21.64507 34.55447,4.27078 0.38825,0 2.71777,-28.63362 0.67944,-7.08561 7.27974,-75.12685 0.38825,-3.49427 -2.52364,-0.29119 z"/>
+                    </a>
+                    <a href="SOUTHEAST/NM.html">
+                        <path
+                            data-name="New Mexico"
+                            d="m 472.45213,324.75551 0.0971,-2.52364 0.0971,-2.52364 0.0971,-2.52364 -3.10602,-0.0971 -21.45095,-0.97063 -21.54801,-1.35889 -48.91981,-4.27077 -3.00896,-0.29119 -0.38825,3.49427 -7.27974,75.12685 -0.67944,7.08561 -2.71777,28.63362 0.38826,0.0971 13.39471,1.26183 1.26182,-6.79442 2.42658,-1.94127 27.17767,2.42658 0.19413,0 -2.42658,-4.75609 12.32701,0.87357 30.76901,1.74713 19.2185,0.87357 3.30015,-91.0452 0.67944,0.0971 0.0971,-2.62071 z"/>
+                    </a>
+                    <a href="SOUTHEAST/TX.html">
+                        <path
+                            data-name="Texas"
+                            d="m 573.98015,536.93549 -4.65902,-17.56842 0,3.30015 4.65902,14.26827 z m -1.06769,-30.86607 -3.30015,6.21204 -0.38825,2.03833 3.6884,-8.25037 z m 2.6207,-4.56196 3.10602,-4.07666 -2.23245,1.35889 -0.87357,2.71777 z m 10.96814,-9.90044 -7.27974,3.78546 2.03833,-0.38825 5.24141,-3.39721 z m 0.97063,-1.35889 2.03832,-1.65007 -0.7765,0.19413 -1.26182,1.45594 z m -115.11686,-162.87191 -0.67944,-0.0971 -3.30015,91.0452 -19.2185,-0.87357 -30.76901,-1.74713 -12.32701,-0.87357 2.42658,4.75609 0.0971,0.0971 10.48282,10.48281 6.01791,7.08561 7.95917,5.92085 5.62967,10.28869 2.13538,10.77401 4.56197,3.00895 3.59134,3.97959 5.14434,1.8442 7.47386,4.75609 3.39721,1.26183 4.65903,-4.65903 1.45595,-4.95022 2.42658,-4.7561 7.57092,-3.00895 2.91189,1.45594 8.44449,0.67945 7.66799,4.75609 5.24141,0.97063 -1.45595,2.71777 3.00896,1.94126 2.81483,3.39721 0.58238,3.59133 1.8442,2.42658 4.27077,10.28869 4.27078,3.59134 3.30015,5.43553 4.17371,4.27078 1.8442,0.58238 1.55301,11.06519 4.56197,2.52365 0.19412,3.49427 1.16476,-0.29119 7.95918,9.70631 3.97959,0.87357 5.04728,3.00896 7.76505,0 5.62966,3.10601 6.69735,-1.45594 -3.00895,-2.81483 -2.71777,-8.1533 -1.06769,-7.08561 -1.55301,-2.32952 0.67944,-4.75609 -2.03833,-0.19413 -2.71777,-4.4649 3.10602,3.30015 3.59134,-1.26182 1.94126,-5.14435 -3.88252,-5.24141 5.82378,0.67944 2.71777,-4.17371 -0.38825,-1.45595 2.42658,-3.20308 -0.58238,2.81483 2.71777,-2.13539 -1.0677,-3.78546 3.49427,1.8442 4.46491,-2.52364 -4.36784,-4.56197 2.71776,1.0677 5.04729,0.29119 6.60029,-1.45595 7.3768,-4.95022 4.4649,-3.6884 0.67944,-2.71777 2.71777,-2.81483 -1.45595,-4.65903 0.29119,-2.91189 4.85316,-2.13539 -0.38826,5.14435 2.9119,0 -3.20308,2.71776 12.90939,-6.79441 2.13539,-0.0971 1.35888,-6.21204 0.38826,0 1.45594,-3.59133 0.67944,-11.0652 0.87357,-4.4649 -2.52364,-7.95918 -3.10602,-5.43553 -0.0971,-2.62071 -3.20309,-4.4649 -1.94126,-18.73318 -0.0971,-2.32952 -0.19413,-2.42658 -0.58238,-8.54155 -5.82378,0.19413 -1.45595,-1.55301 -0.29119,-0.0971 -0.0971,0 -3.78546,-0.67944 -4.36784,-2.81483 -4.85316,-2.03832 -9.12393,2.6207 -2.42658,-0.58238 -3.00896,1.16476 -3.6884,3.00895 -9.90044,-4.65902 -3.10601,4.27077 -4.56197,-1.65007 -4.85316,-3.10602 -2.6207,2.23245 -2.52364,0.0971 0,-1.84419 -6.79442,-3.20309 -2.71777,1.26182 -1.35888,-1.55301 -7.47386,-0.7765 -5.72673,-5.24141 -0.87356,1.74714 -4.17372,-0.19413 -3.88252,-3.6884 -1.74714,-5.82379 -0.29119,-33.19558 -24.84816,-0.29119 -23.48927,-0.58238 -0.58238,0 z"/>
+                    </a>
+                    <a href="SOUTHEAST/OK.html">
+                        <path
+                            data-name="Oklahoma"
+                            d="m 609.50526,322.91131 -0.19413,-2.6207 -0.0971,-2.52364 -0.19413,-2.52364 -3.6884,0.29119 -37.56342,1.74713 -52.70528,0.77651 -22.51864,-0.29119 -4.17372,-0.0971 -1.55301,0 -6.11497,-0.19413 -1.94127,-0.0971 -4.07665,-0.0971 -1.94126,-0.0971 -0.0971,2.52364 -0.0971,2.52364 -0.0971,2.52364 -0.0971,2.62071 0.58238,0 23.48927,0.58238 24.84816,0.29119 0.29119,33.19558 1.74714,5.82379 3.88252,3.6884 4.17372,0.19413 0.87356,-1.74714 5.72673,5.24141 7.47386,0.7765 1.35888,1.55301 2.71777,-1.26182 6.79442,3.20309 0,1.84419 2.52364,-0.0971 2.6207,-2.23245 4.85316,3.10602 4.56197,1.65007 3.10601,-4.27077 9.90044,4.65902 3.6884,-3.00895 3.00896,-1.16476 2.42658,0.58238 9.12393,-2.6207 4.85316,2.03832 4.36784,2.81483 3.78546,0.67944 0.0971,0 -0.0971,-4.36784 -1.0677,-26.40117 -0.0971,-4.36784 -3.78546,-19.60675 -0.58238,-2.71776 -0.0971,-2.52365 z"/>
+                    </a>
+                </g>
+                <g class="textStates">
+                    <a href="SOUTHWEST/AZ.html"><text data-name="Arizona" font-size="15px" x="320" y="375" style="line-height:5">AZ</text></a>
+                    <a href="SOUTHWEST/NM.html"><text data-name="New Mexico" font-size="15px" x="400" y="375" style="line-height:5">NM</text></a>
+                    <a href="SOUTHWEST/TX.html"><text data-name="Texas" font-size="15px" x="525" y="445" style="line-height:5">TX</text></a>
+                    <a href="SOUTHWEST/OK.html"><text data-name="Oklahoma" font-size="15px" x="550" y="350" style="line-height:5">OK</text></a>
+                </g>
+            </svg>
+        </section>
+        <!-- End Map SVG -->
+        <!-- Quiz -->
+        <section class="questions">
+            <h1>Questions</h1>
+            <!-- questions -->
+            <div class="section-center">
+              <!-- each question -->
+                <div class="question">
+                    <!-- question title 1 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>1. Which states are shown on the maps to be part of the Northeastern United States?</p>
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Connecticut</li>
+                                <li>Maine</li>
+                                <li>Massachusetts</li>
+                                <li>New Hampshire</li>
+                                <li>New Jersey</li>
+                                <li>New York</li>
+                                <li>Pennsylvania</li>
+                                <li>Rhode Island</li>
+                                <li>Vermont</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 2 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>2. Which states are shown on the maps to be part of the Southeastern United States?</p>
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Alabama</li>
+                                <li>Arkansas</li>
+                                <li>Delaware</li>
+                                <li>Florida</li>
+                                <li>Georgia</li>
+                                <li>Kentucky</li>
+                                <li>Louisiana</li>
+                                <li>Maryland</li>
+                                <li>Mississippi</li>
+                                <li>North Carolina</li>
+                                <li>South Carolina</li>
+                                <li>Tennessee</li>
+                                <li>Virginia</li>
+                                <li>West Virginia</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 3 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>3. Which states are shown on the maps to be part of the Midwestern United States?</p>
+                            <!-- button -->
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Illinois</li>
+                                <li>Indiana</li>
+                                <li>Iowa</li>
+                                <li>Kansas</li>
+                                <li>Michigan</li>
+                                <li>Minnesota</li>
+                                <li>Missouri</li>
+                                <li>Ohio</li>
+                                <li>Nebraska</li>
+                                <li>North Dakota</li>
+                                <li>South Dakota</li>
+                                <li>Wisconsin</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 4 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>4. Which states are shown on the maps to be part of the Southwestern United States?</p>
+                            <!-- button -->
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Arizona</li>
+                                <li>Oklahoma</li>
+                                <li>New Mexico</li>
+                                <li>Texas</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 5-->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>5. Which States Are Shown On The Maps To Be Part Of The Western United States?</p>
+                            <!-- button -->
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Alaska</li>
+                                <li>California</li>
+                                <li>Colorado</li>
+                                <li>Hawaii</li>
+                                <li>Idaho</li>
+                                <li>Montana</li>
+                                <li>Nevada</li>
+                                <li>Oregon</li>
+                                <li>Utah</li>
+                                <li>Washington</li>
+                                <li>Wyoming</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+                </div>
+                </section>
+        <!-- End Quiz-->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <section class="footer-content">
+                    <div class="footer-about">
+                        <div>
+                            <h3 class="footer-sub-header subtitle">About Mawi Tour</h3>
+                            <p>Hello, I'm Leng. I hope your visit to my project with responsive code was enjoyable.</p>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                        <h3 class="footer-sub-header subtitle">Getting around</h3>
+                            <ul class="footer-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="sitemap.html">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="footer-sub-header subtitle">Other things</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="footer-sub-header subtitle">And more</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thank you for viewing my code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="topbutton" title="Go to top"></button>
+        <!-- javascript -->
+        <script src="assets/javascript/nav.js"></script>
+        <script src="assets/javascript/Light:Dark.js"></script>
+        <script src="assets/javascript/topbutton.js"></script>
+        <script src="assets/javascript/search-animation.js"></script>
+        <script src="assets/javascript/questions.js"></script>
+    </body>
+</html>

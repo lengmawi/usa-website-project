@@ -1,0 +1,95 @@
+.WEST path,
+.SOUTHWEST path,
+.SOUTHEAST path,
+.NORTHEAST path,
+.MIDWEST path,
+.textStates path {
+    stroke: var(--white);
+    transition: fill .4s ease;
+    transform-origin: center center;
+}
+body.dark .WEST path,
+body.dark .SOUTHWEST path,
+body.dark .SOUTHEAST path,
+body.dark .NORTHEAST path,
+body.dark .MIDWEST path,
+body.dark .textStates path {
+    stroke: var(--black);
+}
+.WEST path:hover,
+.SOUTHWEST path:hover,
+.SOUTHEAST path:hover,
+.NORTHEAST path:hover,
+.MIDWEST path:hover,
+.textStates path:hover {
+    cursor: pointer;
+    transform: scale(1.005, 1.005);
+}
+.lineStates path {
+    stroke: var(--red);
+}
+#details-box {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: var(--p);
+    position: fixed;
+    color: var(--white);
+    font-weight: 300;
+    background-color: var(--black);
+    transform: translateX(-50%);
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+body.dark #details-box { 
+    color: var(--black);
+    background-color: var(--white);
+}
+.WEST, .WEST a {
+    fill: #FF0000;
+}
+.WEST path:hover {
+    fill: #8B0000;
+}
+.MIDWEST, .MIDWEST a {
+    fill: #00FFFF;
+}
+.MIDWEST path:hover {
+    fill: #00CED1;
+}
+.SOUTHWEST, .SOUTHWEST a {
+    fill: #7CFC00;
+}
+.SOUTHWEST path:hover {
+    fill: #228B22;
+}
+.SOUTHEAST, .SOUTHEAST a {
+    fill: #FFFF00;
+}
+.SOUTHEAST path:hover {
+    fill: #FFD700;
+}
+.DC, .DC a {
+    fill: #9B30FF;
+}
+.DC path:hover {
+    fill: #694489;;
+}
+.NORTHEAST, .NORTHEAST a {
+    fill: #FFA500;
+}
+.NORTHEAST path:hover {
+    fill: #D2691E;
+}
+.map-svg {
+    text-align: center;
+    margin: 0px;
+    background: var(--gray);
+    padding-top: 50px
+}
+body.dark .map-svg, body.dark .map-svg p {
+    color: var(--white);
+    background: var(--black);
+}
+body.dark .textStates a text {
+    fill:  var(--white);
+}

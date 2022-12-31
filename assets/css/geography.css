@@ -1,0 +1,108 @@
+.light-dark {
+    display: flex;
+    justify-content: flex-end;
+    padding: 75px 5px 0 0;
+}
+.geography {
+    display: grid;
+    height: 100%;
+    background: var(--firstColor);
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.text-container {
+    display: grid;
+    justify-items: center;
+}
+.btnMovie img {
+    max-width: 90vw;
+    border-radius: 10px;
+}
+.btnMovie-h1 {
+    color: var(--white);
+    font-weight: 500;
+    margin-top: 60px;
+}
+@media only screen and (max-width: 375px) {
+    .btnMovie-h1 {
+        margin-top: 0px;
+    }  
+}
+body.dark .btnMovie-h1 {
+    color: var(--black);
+}
+.btnMovie-p {
+    color: var(--white);
+    margin: 10px 0;
+}
+body.dark .btnMovie-p {
+    color: var(--black);
+}
+.btnMovie, .btnCheckBox {
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#btn_id {
+    background: var(--white);
+}
+body.dark #btn_id {
+    background: var(--black);
+    color: var(--white);
+}
+#btn_id:hover {
+    background: var(--black);
+    color: var(--white);
+}
+body.dark #btn_id:hover {
+    background: var(--white);
+    color: var(--black);
+}
+.trailer-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-gray);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.7s;
+    z-index: 99;
+}
+body.dark .trailer-container {
+    background-color: var(--light-black);
+}
+.active.trailer-container {
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer-container iframe {
+    height: 90vh;
+    width: 90vw;
+}
+@media (max-width: 991px) {
+    .trailer-container video {
+        max-width: 90%;
+    }
+}
+.close-icon {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--h66);
+    border-radius: 20px;
+    background: var(--black);
+}
+body.dark .close-icon {
+    color: var(--black);
+    background: var(--white);
+}

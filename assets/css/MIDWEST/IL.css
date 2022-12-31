@@ -1,0 +1,26 @@
+:root{
+    --firstColor: #BE0A2f;
+    --secondColor: #FFFFFF;
+    --thirdColor: #002768;
+    --fourColor: #785A3C;
+    --fiveColor: #FFE60F;
+    --sixColor: #3F863F;
+    --sevenColor: #64B4FF;
+    --eightColor: #B4B4B4;
+}
+/*flag*/
+.swiper-img-two {
+    background-image: url(https://flaglane.com/download/illinois-flag/illinois-flag-graphic.png);
+}
+/*bird*/
+.swiper-img-four {
+    background-image: url(https://images.unsplash.com/photo-1551668231-6a07c2b7d544?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80);
+}
+/*tree*/
+.swiper-img-six {
+    background-image: url(https://images.unsplash.com/photo-1650423623062-678d351f7c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80);
+}
+/*flower*/
+.swiper-img-eight {
+    background-image: url(https://images.unsplash.com/photo-1552838873-dc6f730860fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+}

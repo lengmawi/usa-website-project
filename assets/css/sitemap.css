@@ -1,0 +1,17 @@
+ul {
+    list-style-type: circle;
+}
+.list {
+    padding: 80px 0 0 15px;
+    height: 100%;
+    color: var(--black);
+}
+.list ul {
+    padding-left: 15px;
+}
+.list ul ul {
+    padding-left: 15px;
+}
+.list ul ul ul {
+    padding-left: 15px;
+}

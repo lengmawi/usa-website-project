@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
+        <title> Mawi Tour &#124; NORTHEAST</title>
+        <link rel="stylesheet" href="assets/css/nav.css">
+        <link rel="stylesheet" href="assets/css/topbutton.css">
+        <link rel="stylesheet" href="assets/css/content.css">
+        <link rel="stylesheet" href="assets/css/NORTHEAST.css">
+        <link rel="stylesheet" href="assets/css/animated-search.css">
+        <link rel="stylesheet" href="assets/css/InteractiveUSMap.css">
+        <link rel="stylesheet" href="assets/css/questions.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Nav -->
+        <header id="main-nav">
+            <div id="container">
+                <div id="menu" class=" overlay">
+                    <a href="javascript:void(0)" class="closeMenu" onclick="closeNav()" >&times;</a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="WEST.html">WEST</a></li>
+                            <li><a href="SOUTHWEST.html">SOUTHWEST</a></li>
+                            <li><a href="SOUTHEAST.html">SOUTHEAST</a></li>
+                            <li><a href="NORTHEAST.html">NORTHEAST</a></li>
+                            <li><a href="MIDWEST.html">MIDWEST</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="nav-hamburger-label" onclick="openNav()" aria-hidden="true">&#9776;</span>
+                <a href="index.html"><img src="assets/images/brand.png" alt="logo"></a>
+            </div>
+        </header> 
+        <!-- End Nav -->
+        <!-- Welcome -->
+        <section class="content">
+            <div class="light-dark">
+                <input type="checkbox" class="light-dark-checkbox" id="light-dark-checkbox">
+                    <label for="light-dark-checkbox" class="light-dark-checkbox-label">
+                    <span class="light-dark-ball"></span>
+                </label>
+            </div>
+            <div class="wrapper">
+                <h1>NORTHEAST</h1>
+            </div>
+        </section>
+        <!-- End Welcome -->
+        <!-- Map SVG -->
+        <section class="map-svg">
+            <h2>Search for States...</h2>
+            <p>To see the states, hover your cursor over it and click it.</p>
+            <div id="details-box"></div>
+            <!--  min-x , min-y , width and height  -->
+            <svg viewBox="400 -200 1000 589" id="usa-map" data-name="Northeast Region">
+                <g class="NORTHEAST">
+                <a href="NORTHEAST/CT.html">
+                    <path
+                    data-name="Connecticut"
+                    d="m 936.99622,143.34454 -13.97709,5.33847 -0.19412,-0.48531 -7.86211,2.32951 -1.74714,0.48532 0.19413,0.97063 3.68839,14.26828 1.16476,1.45595 -2.52364,3.10602 1.74714,1.65007 0,0 5.62966,-5.43554 3.00895,-4.17371 0.58238,1.16476 14.17122,-6.30911 0.29119,-0.29118 -0.0971,-2.32952 -0.58237,-2.03833 -3.00896,-8.44449 -0.38825,-1.06769 -0.0971,-0.19413 z"/>
+                </a>
+                <a href="NORTHEAST/NH.html">
+                    <path
+                    data-name="New Hampshire"
+                    d="m 923.8927,75.982738 -1.26182,1.55301 -1.45594,-0.29119 -0.77651,6.406166 0,0.09706 2.32952,8.735681 -0.19413,1.747136 -4.17372,5.532598 1.0677,5.047281 0,6.30911 -0.77651,5.82378 4.36784,15.91836 0,0 0,0 3.97959,-1.26182 12.22996,-4.07666 5.53259,-6.01791 0,0 0,-1.55301 0.29119,-2.52364 -0.67944,0.29119 -0.0971,-0.58238 -6.11498,-7.47386 -0.19413,-0.67944 -14.07415,-33.001465 0,0 z"/>
+                </a>
+                <a href="NORTHEAST/RI.html">
+                    <path
+                    data-name="Rhode Island"
+                    d="m 946.50841,152.08022 -0.0971,-2.03832 -0.29119,0.7765 0.38825,1.26182 z m 1.94126,-1.55301 -1.26182,-2.42657 -0.0971,2.52364 1.35888,-0.0971 z m -0.58238,-3.00895 0.67944,1.74713 0.87357,1.55301 0.58238,-1.16475 -0.87357,-1.65008 -0.29119,-1.16475 -0.97063,0 0,0.67944 z m -10.774,-3.97959 0.38825,1.06769 3.00896,8.44449 0.58237,2.03833 0.0971,2.32952 0.19412,-0.29119 4.65903,-3.6884 -0.87356,-6.60029 1.94126,-0.38826 0,0 -4.27078,-5.14434 -4.4649,1.74713 -1.26182,0.48532 z"/>
+                </a>
+                <a href="NORTHEAST/VT.html">
+                    <path
+                    data-name="Vermont"
+                    d="m 923.01913,132.86173 -4.36784,-15.91836 0.77651,-5.82378 0,-6.30911 -1.0677,-5.047278 4.17372,-5.532598 0.19413,-1.747136 -2.32952,-8.735681 -1.26182,0.485316 -5.33847,1.941262 -5.24141,2.038326 -12.03583,4.36784 -0.67944,0.194126 4.36784,10.191633 1.45595,9.60924 5.14434,8.05624 4.85316,15.91835 0.19413,-0.0971 0.7765,-0.29119 2.23245,-0.67944 1.94126,-0.67944 5.5326,-1.65007 0.67944,-0.29119 0,0 z"/>
+                </a>
+                <a href="NORTHEAST/MA.html">
+                    <path
+                        data-name="Massachusetts"
+                        d="m 956.31178,153.05085 -0.29118,-0.19412 0,0.29119 0.29118,-0.0971 z m -2.91189,-2.6207 0.67944,-0.29119 0,-0.38825 -0.67944,0.67944 z m 12.03583,-7.57092 -0.0971,-1.35889 -0.19412,-0.7765 0.29119,2.13539 z m -42.41659,-9.9975 -0.67944,0.29119 -5.5326,1.65007 -1.94126,0.67944 -2.23245,0.67944 -0.7765,0.29119 0,0.29119 0.29118,5.04728 0.29119,4.65903 0.29119,4.27078 0.48532,0.29119 1.74714,-0.48532 7.86211,-2.32951 0.19412,0.48531 13.97709,-5.33847 0.0971,0.19413 1.26182,-0.48532 4.4649,-1.74713 4.27078,5.14434 0,0 0.58238,-0.48531 0.29119,-1.45595 -0.0971,2.32952 0,0 0.97063,0 0.29119,1.16475 0.87357,1.65008 0,0 4.56197,-5.5326 3.78546,1.26182 0.87357,-1.94126 6.21204,-3.30015 -2.62071,-5.14435 0.67945,3.30015 -3.20309,2.42658 -3.59133,0.29119 -7.18267,-7.66799 -3.20309,-4.85315 3.20309,-3.39721 -3.30015,-0.19413 -1.35888,-3.20308 -0.0971,-0.19413 -5.53259,6.01791 -12.22996,4.07666 -3.97959,1.26182 0,0 z"/>
+                </a>
+                <a href="NORTHEAST/NJ.html">
+                    <path
+                        data-name="New Jersey"
+                        d="m 916.80709,207.30914 -0.48531,-1.16476 0,1.16476 0.48531,0 z m 0.97064,-3.59134 0.29119,-2.91189 -0.58238,2.52364 0.29119,0.38825 z m -3.97959,-29.79837 -10.19163,-2.52365 -1.74714,-0.48531 -1.65007,-0.38825 0,0 -4.07665,9.02687 1.74714,2.13539 -0.0971,6.50322 1.8442,0.29119 3.78546,9.90044 -0.19412,0.29119 -4.75609,6.98855 0.48531,5.33847 11.45345,3.88252 0.0971,4.46491 2.62071,-3.6884 0.38825,-5.33847 2.71777,-1.8442 -1.0677,-3.97959 2.03833,-4.75609 0,-10.38576 -0.67944,-3.39721 -4.56197,0.0971 1.16476,-4.65903 0.67944,-7.47386 0,0 z"/>
+                </a>
+                <a href="NORTHEAST/NY.html">
+                    <path
+                        data-name="New York"
+                        d="m 913.50695,181.78154 -1.45595,2.03832 -0.38825,0.58238 1.8442,-2.6207 z m 13.39471,-4.75609 4.85316,-4.27078 0,-0.19413 -4.85316,4.46491 z m -12.71527,3.00895 0,-3.30014 -0.29119,1.74713 0.29119,1.55301 z m 22.51864,-15.5301 -1.16475,-0.29119 -0.19413,0.87357 1.35888,-0.58238 z m 2.62071,-1.74713 -0.0971,0.97063 0.19412,-0.58238 -0.0971,-0.38825 z m -2.71777,0.0971 -6.50323,6.01791 -9.9975,4.27078 -2.6207,2.23245 -0.19413,2.13539 -2.71777,2.23245 0.38826,2.9119 4.17371,-1.65008 6.11498,-4.95022 6.79441,-3.59133 10.2887,-9.70631 -7.27974,5.53259 -2.32951,0.97064 3.88252,-6.40617 z m 3.00896,-4.07665 0.38825,-0.58238 -1.16476,1.35888 0.77651,-0.7765 z m -109.09895,-3.59134 -1.55301,-0.19412 1.16476,1.55301 0.38825,-1.35889 z m 32.22496,-29.70131 0.19412,-1.0677 -0.7765,0.97064 0.58238,0.0971 z m 0.48531,-6.98855 -0.38825,0.19413 -0.48532,1.06769 0.87357,-1.26182 z m -41.0577,55.13186 0.67944,2.91189 5.14435,1.26182 29.50719,-8.05624 29.70131,-8.92981 5.43554,4.17372 1.06769,2.42658 6.3091,2.71776 0.19413,0.38826 1.65007,0.38825 1.74714,0.48531 10.19163,2.52365 -0.19413,-0.48532 0.87357,3.97959 1.94126,-0.48532 1.0677,-4.36784 0,-0.0971 -1.74714,-1.65007 2.52364,-3.10602 -1.16476,-1.45595 -3.68839,-14.26828 -0.19413,-0.97063 -0.48532,-0.29119 -0.29119,-4.27078 -0.29119,-4.65903 -0.29118,-5.04728 0,-0.29119 -0.19413,0.0971 -4.85316,-15.91835 -5.14434,-8.05624 -1.45595,-9.60924 -4.36784,-10.191633 -0.58238,0.29119 -20.28619,6.794418 -4.07665,4.367845 -4.56197,8.73568 0.19413,1.94126 -6.01791,9.12393 3.68839,1.26182 1.0677,6.89148 -4.27078,5.62967 -12.81233,7.76504 -2.42658,-0.97063 -9.51218,1.35889 -8.83275,5.33847 0.48532,2.81483 3.10602,2.71777 -1.74714,8.54155 -6.98854,8.1533 -0.0971,0.0971 z"/>
+                </a>
+                <a href="NORTHEAST/PA.html">
+                    <path
+                        data-name="Pennsylvania"
+                        d="m 900.01517,170.13396 -6.3091,-2.71776 -1.06769,-2.42658 -5.43554,-4.17372 -29.70131,8.92981 -29.50719,8.05624 -5.14435,-1.26182 -0.67944,-2.91189 -1.65007,1.26182 -2.6207,1.8442 -4.7561,4.85315 -0.58238,0.48532 2.71777,11.93876 0.48532,2.13539 2.42657,10.48282 0.48532,2.03832 0,0 4.27078,18.442 13.78296,-3.39721 1.94126,-0.48532 1.74714,-0.48531 6.89148,-1.8442 37.95168,-10.57988 6.89148,-2.13539 1.65008,-0.48532 0,0 0.7765,-1.94126 1.74714,-1.35888 2.32951,0 0.29119,-0.87357 3.78546,-4.27078 0.38825,-0.67944 0.29119,-0.19413 -3.78546,-9.90044 -1.8442,-0.29119 0.0971,-6.50322 -1.74714,-2.13539 4.07665,-9.02687 0,0 -0.19413,-0.38826 z"/>
+                </a>
+                <a href="NORTHEAST/ME.html"><path
+                    data-name="Maine"
+                       d="m 946.7996,118.39932 -0.0971,0 0.19412,0.0971 -0.0971,-0.0971 z m 7.18267,-20.674443 -0.77651,-1.164758 0,0.582379 0.77651,0.582379 z m -1.35888,-1.067695 0,-0.970631 -0.0971,-0.582379 0.0971,1.55301 z m 3.49427,-4.076651 -0.19413,-0.09706 0.0971,0.291189 0.0971,-0.194126 z m 9.70631,-4.853156 -0.19413,-1.455947 -0.38825,0.679442 0.58238,0.776505 z m -2.42658,0.582379 0.0971,-1.067694 -1.16476,0.194126 1.06769,0.873568 z m 3.59134,-3.203083 -0.38825,0 0,0.194126 0.38825,-0.194126 z m -4.85316,1.455947 -0.87357,-0.194126 -0.0971,0.873568 0.97063,-0.679442 z m 4.95022,-3.008957 0.87357,0.679442 -0.29119,-0.776505 -0.58238,0.09706 z m -2.6207,0.09706 -0.87357,1.650073 1.16476,-0.582379 -0.29119,-1.067694 z m -4.17372,0.09706 -0.38825,0.582379 0.29119,0.873568 0.0971,-1.455947 z m 5.72673,-3.203083 -0.0971,-0.776505 -0.29119,0.485316 0.38826,0.291189 z m -0.48532,0.388253 -0.87357,-0.776505 0,0.679442 0.87357,0.09706 z m -5.43553,2.232452 -0.19413,-1.067695 -0.38825,0.873568 0.58238,0.194127 z m 9.22099,-3.39721 -1.45594,2.135389 -0.0971,-1.55301 1.55301,-0.582379 z m 7.08561,-6.503229 -0.67944,-0.970631 -0.38825,0.194126 1.06769,0.776505 z m 2.6207,-4.36784 -0.58237,-0.291189 -0.0971,0.291189 0.67944,0 z m 1.26183,-7.570923 -0.87357,0 0.97063,0.291189 -0.0971,-0.291189 z m 1.45594,0.970631 -0.29119,-1.747136 -0.7765,-0.09706 1.06769,1.8442 z m -1.55301,-1.55301 -0.19412,-1.844199 -0.67945,1.26182 0.87357,0.582379 z m -56.29661,15.23891 14.07415,33.001458 0.19413,0.67944 6.11498,7.47386 0,-0.0971 0.97063,-0.29119 0.19413,-5.5326 1.55301,-1.94126 0.97063,-5.14435 -0.87357,-0.87357 1.65007,-5.047274 5.62966,-2.620704 3.6884,-4.464904 1.35888,-7.765049 5.92085,-0.388253 -0.7765,-3.979588 7.3768,-2.81483 0.48531,-4.36784 1.74714,0.388252 4.85315,-3.979588 2.13539,-5.144345 -4.95022,-4.950219 -5.2414,-1.067695 -1.94127,-3.979588 0,-2.329515 -3.20308,0.970632 -3.59134,-1.261821 0,-3.979588 -9.70631,-20.965634 -7.0856,-3.688398 -7.86212,6.600292 -2.13539,-0.388253 -1.8442,-3.397209 -2.52364,0.970631 -3.59133,17.859614 1.26182,5.823788 1.06769,11.8417 -2.81483,9.123934 1.94126,1.455946 -2.32951,4.464904 -2.52364,-0.388253 -0.19413,0.194127 z"/>
+                </a>
+        </g>
+                <g class="textStates">
+                        <a href="NORTHEAST/PA.html"><text data-name="Pennsylvania" font-size="15px" x="845" y="200" style="line-height:5">PA</text></a>
+                        <a href="NORTHEAST/NY.html"><text data-name="New York" font-size="15px" x="870" y="150" style="line-height:5">NY</text></a>
+                        <a href="NORTHEAST/ME.htmL"><text data-name="Maine" font-size="15px" x="935" y="80" style="line-height:5">ME</text></a>
+                        <a href="NORTHEAST/VT.html"><text data-name="Vermont" font-size="15px" x="870" y="80" style="line-height:5">VT</text></a>
+                        <a href="NORTHEAST/NH.html"><text data-name="New Hampshire" font-size="15px" x="890" y="50" style="line-height:5">NH</text></a>
+                        <a href="NORTHEAST/MA.html"><text data-name="Massachusetts" font-size="15px" x="965" y="100" style="line-height:5">MA</text></a>
+                        <a href="NORTHEAST/RI.html"><text data-name="Rhode Island" font-size="15px" x="965" y="175" style="line-height:5">RI</text></a>
+                        <a href="NORTHEAST/CT.html"><text data-name="Connecticut" font-size="15px" x="930" y="210" style="line-height:5">CT</text></a>
+                        <a href="NORTHEAST/NJ.html"><text data-name="New Jersey" font-size="15px" x="955" y="240" style="line-height:5">NJ</text></a>
+                    </g>
+                <g class="lineStates">
+                    <path data-name="New Hampshire" d="m 900 55 l 30 60"></path>
+                    <path data-name="Vermont" d="m 880 85 l 35 25"></path>
+                    <path data-name="Massachusetts" d="m 960 100 l -30 40"></path>
+                    <path data-name="Connecticut" d="m 930 150 l 5 45"></path>
+                    <path data-name="Rhode Island" d="m 943 150 l 6 25"></path>
+                    <path data-name="New Jersey" d="m 910 200 l 40 30"></path>
+                </g>
+            </svg>
+        </section>
+        <!-- End Map SVG -->
+        <!-- Quiz -->
+        <section class="questions">
+            <h1>Questions</h1>
+            <!-- questions -->
+            <div class="section-center">
+              <!-- each question -->
+                <div class="question">
+                    <!-- question title 1 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>1. Which states are shown on the maps to be part of the Northeastern United States?</p>
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Connecticut</li>
+                                <li>Maine</li>
+                                <li>Massachusetts</li>
+                                <li>New Hampshire</li>
+                                <li>New Jersey</li>
+                                <li>New York</li>
+                                <li>Pennsylvania</li>
+                                <li>Rhode Island</li>
+                                <li>Vermont</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 2 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>2. Which states are shown on the maps to be part of the Southeastern United States?</p>
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Alabama</li>
+                                <li>Arkansas</li>
+                                <li>Delaware</li>
+                                <li>Florida</li>
+                                <li>Georgia</li>
+                                <li>Kentucky</li>
+                                <li>Louisiana</li>
+                                <li>Maryland</li>
+                                <li>Mississippi</li>
+                                <li>North Carolina</li>
+                                <li>South Carolina</li>
+                                <li>Tennessee</li>
+                                <li>Virginia</li>
+                                <li>West Virginia</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 3 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>3. Which states are shown on the maps to be part of the Midwestern United States?</p>
+                            <!-- button -->
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Illinois</li>
+                                <li>Indiana</li>
+                                <li>Iowa</li>
+                                <li>Kansas</li>
+                                <li>Michigan</li>
+                                <li>Minnesota</li>
+                                <li>Missouri</li>
+                                <li>Ohio</li>
+                                <li>Nebraska</li>
+                                <li>North Dakota</li>
+                                <li>South Dakota</li>
+                                <li>Wisconsin</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 4 -->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>4. Which states are shown on the maps to be part of the Southwestern United States?</p>
+                            <!-- button -->
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Arizona</li>
+                                <li>Oklahoma</li>
+                                <li>New Mexico</li>
+                                <li>Texas</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- question title 5-->
+                    <div class="question-title">
+                        <div class="question-statement">
+                            <p>5. Which States Are Shown On The Maps To Be Part Of The Western United States?</p>
+                            <!-- button -->
+                            <button type="button" class="question-btn">
+                                <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                                </span>
+                                <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- question text -->
+                        <div class="question-text">
+                            <p></p>
+                            <ul>
+                                <li>Alaska</li>
+                                <li>California</li>
+                                <li>Colorado</li>
+                                <li>Hawaii</li>
+                                <li>Idaho</li>
+                                <li>Montana</li>
+                                <li>Nevada</li>
+                                <li>Oregon</li>
+                                <li>Utah</li>
+                                <li>Washington</li>
+                                <li>Wyoming</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+                </div>
+                </section>
+        <!-- End Quiz-->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <section class="footer-content">
+                    <div class="footer-about">
+                        <div>
+                            <h3 class="footer-sub-header subtitle">About Mawi Tour</h3>
+                            <p>Hello, I'm Leng. I hope your visit to my project with responsive code was enjoyable.</p>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <h3 class="footer-sub-header subtitle">Getting around</h3>
+                            <ul class="footer-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="sitemap.html">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="footer-sub-header subtitle">Other things</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="footer-sub-header subtitle">And more</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thank you for viewing my code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="topbutton" title="Go to top"></button>
+        <!-- javascript -->
+        <script src="assets/javascript/nav.js"></script>
+        <script src="assets/javascript/Light:Dark.js"></script>
+        <script src="assets/javascript/topbutton.js"></script>
+        <script src="assets/javascript/search-animation.js"></script>
+        <script src="assets/javascript/questions.js"></script>
+    </body>
+</html>
